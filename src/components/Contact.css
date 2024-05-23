@@ -1,0 +1,5 @@
+@import '../theme.css';
+
+#contact {
+  background-color: var(--secondary-color);
+}

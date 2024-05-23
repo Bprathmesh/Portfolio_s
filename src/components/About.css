@@ -1,0 +1,5 @@
+@import '../theme.css';
+
+#about {
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,17 @@
+:root {
+  --background-color: #9ad3fb; /* Midnight blue */
+  --text-color: #E6E6FA;        /* Lavender */
+  --primary-color: #E6E6FA;     /* Lavender */
+  --secondary-color: #2F4F4F;   /* Dark slate gray (optional) */
+  --accent-color: #fefefe;      /* Gold (optional) */
+}
+
+
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+  }
+  
