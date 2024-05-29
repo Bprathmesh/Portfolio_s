@@ -1,16 +1,16 @@
 import React from "react";
-import Particles from "react-tsparticles";
+// import Particles from "react-tsparticles";
 import Typewriter from "typewriter-effect";
 import "./Hero.css";
 
 function Hero() {
-  const particlesOptions = {
-    /* ... your particle options here */
-  };
+  // const particlesOptions = {
+  
+  // };
 
   return (
     <section id="hero">
-      <Particles options={particlesOptions} />
+      {/* <Particles options={particlesOptions} /> */}
       <div className="hero-content">
         <div className="text-container">
           <h1>Prathmesh Bhardwaj</h1>

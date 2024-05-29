@@ -8,7 +8,7 @@ function About() {
       <p>
         I am a passionate software developer based in Bangalore. I enjoy building
         creative solutions that solve real-world problems. I have experience in
-        [List your main technologies/skills]. I'm always eager to learn and
+        . I'm always eager to learn and
         collaborate on exciting projects.
       </p>
 

@@ -1,27 +1,60 @@
 .header {
-    background-color: var(--secondary-color); /* Dark background */
-    padding: 15px 0; /* Adjust padding as needed */
-    position: fixed; /* Fix to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10; /* Ensure it's above other content */
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; /* Center the links */
-  }
-  
-  nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 500; /* Slightly bolder font */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-  }
-  
-  nav a:hover {
-    color: var(--primary-color);
-  }
-  
+  background-color: #1f4841;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::before,
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+nav a::before {
+  left: 50%;
+}
+
+nav a::after {
+  right: 50%;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+  width: 50%;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
