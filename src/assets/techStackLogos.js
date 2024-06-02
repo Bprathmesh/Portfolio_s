@@ -7,7 +7,10 @@ const techStackLogos = [
     { src: "/logos/git.png", alt: "Git", name: "Git" },
     { src: "/logos/github.png", alt: "GitHub", name: "GitHub" },
     { src: "/logos/mongodb.png", alt: "MongoDB", name: "MongoDB" },
-    { src: "/logos/postgresql.png", alt: "PostgreSQL", name: "PostgreSQL" }
+    { src: "/logos/springboot.png", alt: "springboot", name: "springboot" },
+    { src: "/logos/postgresql.png", alt: "PostgreSQL", name: "PostgreSQL" },
+    { src: "/logos/express.png", alt: "express", name: "express" },
+    { src: "/logos/solidity.png", alt: "solidity", name: "solidity" }
   ];
   
   export default techStackLogos;
