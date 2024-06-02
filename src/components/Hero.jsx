@@ -1,16 +1,10 @@
 import React from "react";
-// import Particles from "react-tsparticles";
 import Typewriter from "typewriter-effect";
 import "./Hero.css";
 
 function Hero() {
-  // const particlesOptions = {
-  
-  // };
-
   return (
     <section id="hero">
-      {/* <Particles options={particlesOptions} /> */}
       <div className="hero-content">
         <div className="text-container">
           <h1>Prathmesh Bhardwaj</h1>
@@ -22,7 +16,7 @@ function Hero() {
             }}
           />
         </div>
-        <img src="/profile.jpg" alt="Profile" className="circular-image" />
+        <img src={`${process.env.PUBLIC_URL}/Profile.jpg`} alt="Profile" className="circular-image" />
       </div>
     </section>
   );

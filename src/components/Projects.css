@@ -1,6 +1,66 @@
 @import '../theme.css';
 
-#projects {
+#projects.full-page {
   background-color: var(--secondary-color);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+#projects h2 {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: var(--background-color); /* Adjust to match the theme */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column; /* Ensure content stacks properly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+}
+
+.project-card h3 {
+  color: var(--primary-color); /* Adjust color to match theme */
+  font-size: 20px; /* Adjust font size as needed */
+  margin-bottom: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.view-project-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-project-btn:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.project-card p {
+  color: var(--text-color); /* Ensure this contrasts with the card background */
+  font-size: 16px;
+  margin-top: 10px;
+}
