@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -8,15 +9,24 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <motion.div 
+      className="App"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
       <Hero />
-      <main>
+      <motion.main
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <About />
         <Projects />
         <Contact />
-      </main>
-    </div>
+      </motion.main>
+    </motion.div>
   );
 }
 

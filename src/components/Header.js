@@ -1,18 +1,30 @@
 import React from "react";
-import "./Header.css"; 
+import { motion } from "framer-motion";
+import "./Header.css";
 
 function Header() {
   return (
-    <header className="header">
+    <motion.header 
+      className="header"
+      initial={{ y: -50 }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", stiffness: 100 }}
+    >
       <nav>
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {["Home", "Projects", "About", "Contact"].map((item, index) => (
+            <motion.li
+              key={item}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <a href={`#${item.toLowerCase()}`}>{item}</a>
+            </motion.li>
+          ))}
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 }
 
